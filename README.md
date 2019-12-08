@@ -15,7 +15,7 @@ MapleJuice is composed of three major components: i) clients for interacting wit
 It uses our Distributed Group Membership Service in MP2 for failure detection and Simple Distributed File System (SDFS) in MP3 for storing the input data and the results of the MapleJuice jobs. For detailed design of these underlying components, see:
 
 - [Distributed Group Membership Service](membership/README.md)
-- [Simple Distributed File System](filesystem/READMe.md)
+- [Simple Distributed File System](filesystem/README.md)
 
 ### Workflow
 
@@ -47,7 +47,7 @@ Port numbers 1234, 1235 and 1236 are pre-occupied by and hence not allowed to be
 
 A list of potential introducer's addresses should be provided in the file _introducer.config_.
 
-We also implemented a distributed log querier for debugging. You can check out the design and usage of it [here](logquerier/README.md).
+We also implemented a distributed log querier for debugging. You can check it out [here](logquerier).
 
 You are then able to input commands to the terminal.
 
