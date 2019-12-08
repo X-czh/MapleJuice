@@ -29,6 +29,8 @@ The master node is in charge of all the scheduling work. It maintains first-in, 
 
 MapleJuice can tolerate up to 3 simultaneous worker failures, limited by the replication factor (4) used in SDFS. A master failure cannot be tolerated though. On the master node, a worker-task mapping table is maintained. When a working worker is reported as failed, the master node retrieves the information of its running task(s), and selects another worker (free worker preferred) to restart the task(s).
 
+*__Interested in the performance of MapleJuice against Hadoop Mapreduce? Check out our report [here](Report.pdf)!__*
+
 ## Usage
 
 ### Run
