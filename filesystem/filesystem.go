@@ -236,7 +236,7 @@ func (fs *FileSystemService) Get(sdfsfilename string, localfilename string) erro
 	// change
 	// checkError(err)
 	if err != nil {
-		fmt.Printf("open file error, %v\n", err)
+		log.Printf("open file error, %v\n", err)
 	}
 
 	// bytes := []byte(reply)
@@ -247,7 +247,7 @@ func (fs *FileSystemService) Get(sdfsfilename string, localfilename string) erro
 	// change
 	// checkError(err)
 	if err != nil {
-		fmt.Printf("write string error, %v\n", err)
+		log.Printf("write string error, %v\n", err)
 	}
 
 	return err

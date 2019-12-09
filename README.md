@@ -10,7 +10,7 @@ MapleJuice consists of two phases of computation – Maple (brother of Map) and 
 
 ## System Architecture
 
-MapleJuice is composed of three major components: i) clients for interacting with users, ii) single master node for task scheduling and coordination, iii) worker nodes for task processing.
+MapleJuice is composed of two major components: i) single master node for task scheduling and coordination, ii) worker nodes for task processing. Each master/worker also provides a client interface for interacting with users.
 
 It uses our Distributed Group Membership Service in MP2 for failure detection and Simple Distributed File System (SDFS) in MP3 for storing the input data and the results of the MapleJuice jobs. For detailed design of these underlying components, see:
 
@@ -29,7 +29,11 @@ The master node is in charge of all the scheduling work. It maintains first-in, 
 
 MapleJuice can tolerate up to 3 simultaneous worker failures, limited by the replication factor (4) used in SDFS. A master failure cannot be tolerated though. On the master node, a worker-task mapping table is maintained. When a working worker is reported as failed, the master node retrieves the information of its running task(s), and selects another worker (free worker preferred) to restart the task(s).
 
-*__Interested in the performance of MapleJuice against Hadoop Mapreduce? Check out our report [here](Report.pdf)!__*
+*__Interested in the performance of MapleJuice against Hadoop MapReduce? Check out our report [here](Report.pdf)!__*
+
+## Requirement
+
+The code is developed and tested with Go v1.13. The only third party library used is [emirpasic/gods v1.12.0](https://github.com/emirpasic/gods/releases/tag/v1.12.0) for treemap.
 
 ## Usage
 

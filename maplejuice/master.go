@@ -250,7 +250,7 @@ func (master *MasterService) processJob() {
 			master.taskMapLock.Unlock()
 
 			elapsed := time.Since(start)
-			fmt.Printf("Execution time: %.1f s", elapsed.Seconds())
+			fmt.Printf("Execution time: %.1f s\n", elapsed.Seconds())
 			log.Println("[MapleJuice] job processing finished")
 			fmt.Println("[MapleJuice] job processing finished")
 		}
