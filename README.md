@@ -141,7 +141,7 @@ Each juice task is responsible for a portion of the keys – each key is allotte
 
 When the last parameter _delete_input_ is set to 1, the MapleJuice engine deletes the input files automatically after the Juice phase is done. If _delete_input_ is set to 0, the Juice input files is left untouched.
 
-## Deveoplers
+## Developers
 
 - [Zhanghao Chen](mailto:zc32@illinois.edu)
 - [Zijie Lu](mailto:zijielu2@illinois.edu)
