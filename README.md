@@ -11,7 +11,7 @@ For detailed design of MapleJuice's components, see:
 - [MapleJuice](maplejuice/README.md)
 - [Simple Distributed File System](filesystem/README.md)
 - [Distributed Group Membership Service](membership/README.md)
-- [Distributed Log Querier](log_querier.README.md)
+- [Distributed Log Querier](logquerier.README.md)
 
 You can also check out our [report](Report.pdf).
 
